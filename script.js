@@ -2,7 +2,7 @@ function noRefresh() {
     event.preventDefault();
 
 }
-    
+    //Función de validación de caracteres
     function validar() {
         noRefresh()
 
