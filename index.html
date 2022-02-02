@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALURA CHALLENGE - LF</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="" style="background-color: #844CC4; color: white">
+
+    <div class="container" style="text-align:center">
+      <h1 class="titulo" style="color: white;">Código Secreto</h1>
+    </div>
+
+  </header> 
+
+  <br><br><br>
+  
+  <div class="main">
+    <div class="caja1" style="border-color: purple; border-width: 5px; border-style: solid; border-radius: 20px; width: 400px; height:190px;">
+      <form action="">
+        <label for="input-texto" class="parrafo">Solo se permiten letras minúsculas, sin acento</label>
+        <br>
+        <br>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+        
+        <input class="btn" type="submit" value="Encriptar" id="btn-encriptar" onclick="validar();">
+        <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar" onclick="desencriptar();">
+      </form>
+    </div>
+
+    <br><br><br><br><br>
+
+  
+    <div class="caja" style="border-color: purple; border-width: 5px; border-style: solid; border-radius: 20px; width: 400px; height: 200px;">
+      <h2 id="" class="parrafo">Mensaje encriptado:</h2>
+      <input class="text-input" type="text" id="msg">
+      <input class="btn" type="submit" value="Copiar" id="btn-copy" onclick="Copy();">
+      <span id="copiado" style="color: purple;"></span>
+    </div>  
+
+  </div>
+
+  <footer class="border-top footer text-muted" style="background-color: #844CC4; color: white">
+    <div class="container" style="text-align:center">
+      &copy; 2022 - ALURA CHALLENGE by <a href="https://beacons.ai/faccio" style="color: red;">Lenin Facio</a> 
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
